@@ -1,0 +1,11 @@
+<%= link_to 'Add New Post', new_post_path %>
+<br>
+
+<% @posts.each do |f|%>
+		<p>
+		Name : <%= f.name%><br>
+		Age : <%= f.age%>	
+		</p>
+		<%= link_to 'Edit', edit_post_path(f) %> | <%= link_to 'Show', post_path(f) %> | <%= link_to 'Delete', f, method: :delete%>
+
+<%end%>

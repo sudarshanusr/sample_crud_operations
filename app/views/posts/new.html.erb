@@ -1,0 +1,14 @@
+<%= form_for @post do |f|%>
+	<p>
+	<%=f.label :'Enter Name'%>
+	<%=f.text_field :name%>
+	</p>
+
+	<p>
+	<%=f.label :'Enter Age'%>
+	<%=f.text_field :age%>
+	</p>
+
+	<%=f.submit  'Submit' %>
+
+<%end%>
